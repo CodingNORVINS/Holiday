@@ -1,0 +1,30 @@
+@use './variables' as *;
+
+%center-text {
+	text-align: center;
+}
+
+%font-bold {
+	font-weight: 700;
+}
+
+%font-regular {
+	font-weight: 300;
+}
+
+%flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+%circle {
+	border-radius: 50%;
+}
+
+%partner-img {
+	position: relative;
+	width: 125px;
+	height: 125px;
+	margin: 0 auto 13px;
+}

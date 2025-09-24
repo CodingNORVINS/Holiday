@@ -1,0 +1,15 @@
+@use '../utils/variables' as *;
+@use '../utils/placeholders' as *;
+
+body {
+	font-family: $main-font;
+	line-height: normal;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	min-height: 100vh;
+
+	main {
+		flex: 1 0 auto;
+	}
+}

@@ -1,0 +1,91 @@
+@use '../utils/variables' as *;
+@use '../utils/placeholders' as *;
+
+body,
+p,
+ol,
+ul,
+li,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+button,
+input,
+select {
+	margin: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+img,
+video {
+	height: auto;
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 8px;
+	padding-right: 8px;
+	min-width: 320px;
+	max-width: 1440px;
+}
+
+label {
+	display: block;
+	height: 30px;
+	position: relative;
+	top: 15px;
+
+	span {
+		content: '';
+		display: block;
+		width: 25px;
+		height: 2px;
+		background: $text-color;
+		position: absolute;
+		right: 0;
+		transition: 0.3s;
+
+		&::before,
+		&::after {
+			content: '';
+			display: block;
+			width: 25px;
+			height: 2px;
+			background: $text-color;
+			position: absolute;
+			right: 0;
+			transition: 0.3s;
+		}
+
+		&::before {
+			top: -8px;
+		}
+
+		&::after {
+			top: 8px;
+		}
+	}
+}

@@ -1,0 +1,13 @@
+@use '../utils/variables' as *;
+@use '../utils/placeholders' as *;
+
+@media screen and (min-width: $breakpoint-small) {
+	.container {
+		width: 570px;
+	}
+}
+@media screen and (min-width: $breakpoint-mid) {
+	.container {
+		width: 920px;
+	}
+}
