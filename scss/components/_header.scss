@@ -1,59 +1,70 @@
 @use '../utils/variables' as *;
 
-.header-hero {
-	line-height: 37px;
-	text-align: center;
-	color: $white;
-	text-transform: uppercase;
-	align-items: center;
+.header {
+	max-width: 1600px;
+	width: 100vw;
+	margin: 0 auto 63px;
+	background-image: url(../../images/mobile/mobile-header.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 
-	&__title {
-		font-size: 30px;
-		display: inline-block;
-		margin-bottom: 12px;
-		width: 307px;
+	@media (min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+		background-image: url(../../images/mobile/mobile-header@2x.jpg);
 	}
 
-	&__subtitle {
-		font-family: $secondary-font;
-		font-size: 18px;
-		font-weight: 300;
-		line-height: 21px;
-		margin-bottom: 17px;
-		text-transform: none;
-	}
+	&-menu {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 175px;
 
-	&__button {
-		background-color: #ff4e50;
-		border: 0;
-		padding: 13px 38px;
-		border-radius: 30px;
-		font-weight: 700;
-		font-size: 14px;
-		margin: 17px 0 136px;
-		color: $white;
-		cursor: pointer;
+		&__items {
+			margin-top: 19px;
+			text-align: center;
+		}
+
+		&__link {
+			font-size: 14px;
+			color: $white;
+			border-radius: 17px;
+			padding: 7px 17px;
+
+			&--border {
+				border: 2px solid $white;
+			}
+		}
+
+		&__logo {
+			font-size: 18px;
+			font-weight: 700;
+			line-height: 22px;
+			letter-spacing: 1px;
+			color: $white;
+			display: block;
+			text-align: center;
+			margin-bottom: 22px;
+		}
 	}
 }
-
-.header {
-	@media (min-width: $breakpoint-small) {
-		background-image: url(../../images/tablet/tablet-header.jpg);
+@media screen and (min-width: $breakpoint-small) {
+	.header-menu__logo {
+		font-size: 20px;
 	}
-
-	@media (min-width: $breakpoint-small) and (min-device-pixel-ratio: 2),
-		(min-width: $breakpoint-small) and (min-resolution: 192dpi),
-		(min-width: $breakpoint-small) and (min-resolution: 2dppx) {
-		background-image: url(../../images/tablet/tablet-header@2x.jpg);
+	.header-hero__title {
+		font-size: 52px;
+		width: 507px;
 	}
-
-	@media (min-width: 1200px) {
-		background-image: url(../../images/desktop/desk-header.jpg);
+	.header-hero__subtitle {
+		font-size: 24px;
 	}
-
-	@media (min-width: 1200px) and (min-device-pixel-ratio: 2),
-		(min-width: 1200px) and (min-resolution: 192dpi),
-		(min-width: 1200px) and (min-resolution: 2dppx) {
-		background-image: url(../../images/desktop/desk-header@2x.jpg);
+	.header-menu {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-evenly;
+		align-items: baseline;
+		margin: 0 auto;
 	}
 }

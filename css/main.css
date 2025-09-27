@@ -43,6 +43,7 @@ a {
 
 body {
   font-family: "Montserrat", sans-serif;
+  line-height: normal;
 }
 body main {
   -webkit-box-flex: 1;
@@ -50,8 +51,10 @@ body main {
           flex: 1 0 auto;
 }
 body .container {
-  margin: 0 auto;
-  padding: 0 8px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 8px;
+  padding-right: 8px;
   min-width: 320px;
   max-width: 1440px;
 }
@@ -66,12 +69,12 @@ label span,
 label span::before,
 label span::after {
   content: "";
-  position: absolute;
-  right: 0;
   display: block;
   width: 25px;
   height: 2px;
   background: #333;
+  position: absolute;
+  right: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -83,78 +86,103 @@ label span::after {
 }
 
 .container {
-  margin: 0 auto;
-  padding: 0 8px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 8px;
+  padding-right: 8px;
   min-width: 320px;
   max-width: 1440px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .container {
     width: 570px;
   }
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .container {
     width: 920px;
   }
 }
-.header-hero {
-  line-height: 37px;
+.header {
+  max-width: 1600px;
+  width: 100vw;
+  margin: 0 auto 63px;
+  background-image: url(../../images/mobile/mobile-header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .header {
+    background-image: url(../../images/mobile/mobile-header@2x.jpg);
+  }
+}
+.header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 175px;
+}
+.header-menu__items {
+  margin-top: 19px;
   text-align: center;
-  color: #fff;
-  text-transform: uppercase;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
-.header-hero__title {
-  font-size: 30px;
-  display: inline-block;
-  margin-bottom: 12px;
-  width: 307px;
-}
-.header-hero__subtitle {
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 21px;
-  margin-bottom: 17px;
-  text-transform: none;
-}
-.header-hero__button {
-  background-color: #ff4e50;
-  border: 0;
-  padding: 13px 38px;
-  border-radius: 30px;
-  font-weight: 700;
+.header-menu__link {
   font-size: 14px;
-  margin: 17px 0 136px;
   color: #fff;
-  cursor: pointer;
+  border-radius: 17px;
+  padding: 7px 17px;
+}
+.header-menu__link--border {
+  border: 2px solid #fff;
+}
+.header-menu__logo {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 1px;
+  color: #fff;
+  display: block;
+  text-align: center;
+  margin-bottom: 22px;
 }
 
-@media (min-width: 768px) {
-  .header {
-    background-image: url(../../images/tablet/tablet-header.jpg);
+@media screen and (min-width: 768px) {
+  .header-menu__logo {
+    font-size: 20px;
+  }
+  .header-hero__title {
+    font-size: 52px;
+    width: 507px;
+  }
+  .header-hero__subtitle {
+    font-size: 24px;
+  }
+  .header-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin: 0 auto;
   }
 }
-@media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
-  .header {
-    background-image: url(../../images/tablet/tablet-header@2x.jpg);
-  }
-}
-@media (min-width: 1200px) {
-  .header {
-    background-image: url(../../images/desktop/desk-header.jpg);
-  }
-}
-@media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
-  .header {
-    background-image: url(../../images/desktop/desk-header@2x.jpg);
-  }
-}
-
 .header-hero {
   line-height: 37px;
   text-align: center;
@@ -240,6 +268,18 @@ label span::after {
   text-align: center;
   margin: 0 auto;
 }
+.partner-item:nth-child(1) .partner-icon {
+  background-color: #ff4e50;
+}
+.partner-item:nth-child(2) .partner-icon {
+  background-color: #1cd7ad;
+}
+.partner-item:nth-child(3) .partner-icon {
+  background-color: #ffa507;
+}
+.partner-item:nth-child(4) .partner-icon {
+  background-color: #4e73db;
+}
 .partner-item__img {
   position: relative;
   width: 125px;
@@ -268,7 +308,7 @@ label span::after {
           align-items: center;
   width: 40px;
   height: 40px;
-  padding: 7px 8px 8px;
+  padding: 7px 8px 8px 8px;
   border-radius: 50%;
   border: 4px solid #fff;
 }
@@ -280,7 +320,7 @@ label span::after {
   margin-bottom: 13px;
 }
 .partner-button {
-  background: none;
+  background-color: transparent;
   border: 2px solid #ff4e50;
   min-height: 43px;
   min-width: 228px;
@@ -299,30 +339,13 @@ label span::after {
       -ms-flex-align: center;
           align-items: center;
   margin: 37px auto 72px;
-  cursor: pointer;
-}
-
-.partner-item:nth-child(1) .partner-icon {
-  background-color: #ff4e50;
-}
-
-.partner-item:nth-child(2) .partner-icon {
-  background-color: #1cd7ad;
-}
-
-.partner-item:nth-child(3) .partner-icon {
-  background-color: #ffa507;
-}
-
-.partner-item:nth-child(4) .partner-icon {
-  background-color: #4e73db;
 }
 
 svg {
-  color: #fff;
+  color: white;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .partner__title {
     width: 440px;
   }
@@ -340,7 +363,7 @@ svg {
         flex-basis: calc((100% - 106px) / 2);
   }
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .partner-list {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
