@@ -45,22 +45,22 @@
 // Header background media queries
 .header {
 	@media screen and (min-width: $breakpoint-small) {
-		background-image: url(../../images/tablet/tablet-header.jpg);
+		background-image: url(../images/tablet/tablet-header.jpg);
 	}
 
 	@media screen and (min-width: $breakpoint-small) and (min-device-pixel-ratio: 2),
 		screen and (min-width: $breakpoint-small) and (min-resolution: 192dpi),
 		screen and (min-width: $breakpoint-small) and (min-resolution: 2dppx) {
-		background-image: url(../../images/tablet/tablet-header@2x.jpg);
+		background-image: url(../images/tablet/tablet-header@2x.jpg);
 	}
 
 	@media screen and (min-width: 1200px) {
-		background-image: url(../../images/desktop/desk-header.jpg);
+		background-image: url(../images/desktop/desk-header.jpg);
 	}
 
 	@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
 		screen and (min-width: 1200px) and (min-resolution: 192dpi),
 		screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-		background-image: url(../../images/desktop/desk-header@2x.jpg);
+		background-image: url(../images/desktop/desk-header@2x.jpg);
 	}
 }

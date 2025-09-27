@@ -227,22 +227,22 @@ label span::after {
 
 @media screen and (min-width: 768px) {
   .header {
-    background-image: url(../../images/tablet/tablet-header.jpg);
+    background-image: url(../images/tablet/tablet-header.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .header {
-    background-image: url(../../images/tablet/tablet-header@2x.jpg);
+    background-image: url(../images/tablet/tablet-header@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .header {
-    background-image: url(../../images/desktop/desk-header.jpg);
+    background-image: url(../images/desktop/desk-header.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .header {
-    background-image: url(../../images/desktop/desk-header@2x.jpg);
+    background-image: url(../images/desktop/desk-header@2x.jpg);
   }
 }
 
