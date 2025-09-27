@@ -1,9 +1,5 @@
 @use '../utils/variables' as *;
 @use '../utils/placeholders' as *;
-<<<<<<< HEAD
-=======
-
->>>>>>> 62975cba5255fc9b1fd9aa816650f77040c2cca7
 body {
 	font-family: $main-font;
 	line-height: normal;
@@ -15,7 +11,6 @@ body {
 	main {
 		flex: 1 0 auto;
 	}
-<<<<<<< HEAD
 
 	.container {
 		margin-left: auto;
@@ -54,6 +49,4 @@ label {
 	span::after {
 		top: 8px;
 	}
-=======
->>>>>>> 62975cba5255fc9b1fd9aa816650f77040c2cca7
 }
