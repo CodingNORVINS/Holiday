@@ -1,5 +1,4 @@
 @use '../utils/variables' as *;
-@use '../utils/placeholders' as *;
 .partner {
 	&__title {
 		width: 290px;
@@ -92,7 +91,6 @@
 	}
 }
 
-// Optional global style
 svg {
 	color: white;
 }

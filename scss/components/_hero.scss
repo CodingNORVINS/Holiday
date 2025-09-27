@@ -1,5 +1,4 @@
 @use '../utils/variables' as *;
-@use '../utils/placeholders' as *;
 .header-hero {
 	line-height: 37px;
 	text-align: center;
@@ -42,7 +41,6 @@
 	}
 }
 
-// Header background media queries
 .header {
 	@media screen and (min-width: $breakpoint-small) {
 		background-image: url(../../images/tablet/tablet-header.jpg);
