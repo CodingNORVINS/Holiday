@@ -1,0 +1,66 @@
+@use '../utils/variables' as *;
+@use '../utils/placeholders' as *;
+.header-hero {
+	line-height: 37px;
+	text-align: center;
+	color: $white;
+	text-transform: uppercase;
+	align-items: center;
+
+	&__title {
+		line-height: normal;
+		font-size: 30px;
+		display: inline-block;
+		margin-bottom: 12px;
+		width: 307px;
+		text-align: center;
+	}
+
+	&__subtitle {
+		font-family: $secondary-font;
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 21px;
+		letter-spacing: 0;
+		text-align: center;
+		margin-bottom: 17px;
+		text-transform: none;
+	}
+
+	&__button {
+		background-color: #ff4e50;
+		border: 0;
+		padding: 13px 38px;
+		border-radius: 30px;
+		font-weight: 700;
+		font-size: 14px;
+		margin-top: 17px;
+		margin-bottom: 136px;
+		color: $white;
+		text-align: center;
+		line-height: normal;
+	}
+}
+
+// Header background media queries
+.header {
+	@media screen and (min-width: $breakpoint-small) {
+		background-image: url(../../images/tablet/tablet-header.jpg);
+	}
+
+	@media screen and (min-width: $breakpoint-small) and (min-device-pixel-ratio: 2),
+		screen and (min-width: $breakpoint-small) and (min-resolution: 192dpi),
+		screen and (min-width: $breakpoint-small) and (min-resolution: 2dppx) {
+		background-image: url(../../images/tablet/tablet-header@2x.jpg);
+	}
+
+	@media screen and (min-width: 1200px) {
+		background-image: url(../../images/desktop/desk-header.jpg);
+	}
+
+	@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+		screen and (min-width: 1200px) and (min-resolution: 192dpi),
+		screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+		background-image: url(../../images/desktop/desk-header@2x.jpg);
+	}
+}

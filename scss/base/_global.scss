@@ -1,0 +1,52 @@
+@use '../utils/variables' as *;
+@use '../utils/placeholders' as *;
+body {
+	font-family: $main-font;
+	line-height: normal;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	min-height: 100vh;
+
+	main {
+		flex: 1 0 auto;
+	}
+
+	.container {
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 8px;
+		padding-right: 8px;
+		min-width: 320px;
+		max-width: $breakpoint-large;
+	}
+}
+
+/* ====================== header ========================== */
+label {
+	display: block;
+	height: 30px;
+	position: relative;
+	top: 15px;
+
+	span,
+	span::before,
+	span::after {
+		content: '';
+		display: block;
+		width: 25px;
+		height: 2px;
+		background: $text-color;
+		position: absolute;
+		right: 0;
+		transition: 0.3s;
+	}
+
+	span::before {
+		top: -8px;
+	}
+
+	span::after {
+		top: 8px;
+	}
+}
