@@ -3,6 +3,7 @@
 .header-hero {
 	line-height: 37px;
 	text-align: center;
+<<<<<<< HEAD
 	color: $white;
 	text-transform: uppercase;
 	align-items: center;
@@ -62,5 +63,49 @@
 		screen and (min-width: 1200px) and (min-resolution: 192dpi),
 		screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 		background-image: url(../../images/desktop/desk-header@2x.jpg);
+=======
+	color: #fff;
+	text-transform: uppercase;
+	align-items: center;
+}
+.header-hero__title {
+	line-height: normal;
+	font-size: 30px;
+	display: inline-block;
+	margin-bottom: 12px;
+	width: 307px;
+	text-align: center;
+}
+.header-hero__subtitle {
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 21px;
+	letter-spacing: 0px;
+	text-align: center;
+	margin-bottom: 17px;
+	text-transform: none;
+}
+.header-hero__button {
+	background-color: #ff4e50;
+	border: 0px;
+	padding: 13px 38px;
+	border-radius: 30px;
+	font-weight: 700;
+	font-size: 14px;
+	margin-top: 17px;
+	margin-bottom: 136px;
+	color: #fff;
+	text-align: center;
+	line-height: normal;
+}
+@media screen and (min-width: 768px) {
+	.header-hero__title {
+		font-size: 52px;
+		width: 507px;
+	}
+	.header-hero__subtitle {
+		font-size: 24px;
+>>>>>>> 62975cba5255fc9b1fd9aa816650f77040c2cca7
 	}
 }

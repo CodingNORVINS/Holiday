@@ -1,10 +1,13 @@
 @use '../utils/variables' as *;
 @use '../utils/placeholders' as *;
+<<<<<<< HEAD
 *,
 *::before,
 *::after {
 	box-sizing: border-box;
 }
+=======
+>>>>>>> 62975cba5255fc9b1fd9aa816650f77040c2cca7
 
 body,
 p,
@@ -32,6 +35,15 @@ select {
 	margin: 0;
 }
 
+<<<<<<< HEAD
+=======
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+>>>>>>> 62975cba5255fc9b1fd9aa816650f77040c2cca7
 img,
 video {
 	height: auto;
@@ -41,3 +53,53 @@ video {
 a {
 	text-decoration: none;
 }
+<<<<<<< HEAD
+=======
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 8px;
+	padding-right: 8px;
+	min-width: 320px;
+	max-width: 1440px;
+}
+
+label {
+	display: block;
+	height: 30px;
+	position: relative;
+	top: 15px;
+
+	span {
+		content: '';
+		display: block;
+		width: 25px;
+		height: 2px;
+		background: $text-color;
+		position: absolute;
+		right: 0;
+		transition: 0.3s;
+
+		&::before,
+		&::after {
+			content: '';
+			display: block;
+			width: 25px;
+			height: 2px;
+			background: $text-color;
+			position: absolute;
+			right: 0;
+			transition: 0.3s;
+		}
+
+		&::before {
+			top: -8px;
+		}
+
+		&::after {
+			top: 8px;
+		}
+	}
+}
+>>>>>>> 62975cba5255fc9b1fd9aa816650f77040c2cca7

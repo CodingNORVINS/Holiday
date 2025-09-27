@@ -1,5 +1,6 @@
 @use '../utils/variables' as *;
 @use '../utils/placeholders' as *;
+<<<<<<< HEAD
 .container {
 	margin-left: auto;
 	margin-right: auto;
@@ -8,6 +9,9 @@
 	min-width: 320px;
 	max-width: $breakpoint-large;
 }
+=======
+
+>>>>>>> 62975cba5255fc9b1fd9aa816650f77040c2cca7
 @media screen and (min-width: $breakpoint-small) {
 	.container {
 		width: 570px;
