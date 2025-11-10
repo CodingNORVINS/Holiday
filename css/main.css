@@ -106,9 +106,9 @@ label span::after {
   }
 }
 .header {
+  margin: 0 auto;
   max-width: 1600px;
   width: 100vw;
-  margin: 0 auto 63px;
   background-image: url("../images/mobile/mobile-header.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -246,6 +246,9 @@ label span::after {
   }
 }
 
+.partner {
+  padding-top: 63px;
+}
 .partner__title {
   width: 290px;
   margin: 0 auto 20px;

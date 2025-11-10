@@ -1,9 +1,9 @@
 @use '../utils/variables' as *;
 
 .header {
+	margin: 0 auto;
 	max-width: 1600px;
 	width: 100vw;
-	margin: 0 auto 63px;
 	background-image: url('../images/mobile/mobile-header.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
