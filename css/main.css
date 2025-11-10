@@ -44,7 +44,6 @@ a {
 body {
   font-family: "Montserrat", sans-serif;
   line-height: normal;
-  width: 1440px;
 }
 body main {
   -webkit-box-flex: 1;
@@ -110,14 +109,14 @@ label span::after {
   max-width: 1600px;
   width: 100vw;
   margin: 0 auto 63px;
-  background-image: url(../images/mobile/mobile-header.jpg);
+  background-image: url(images/mobile/mobile-header.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .header {
-    background-image: url(../images/mobile/mobile-header@2x.jpg);
+    background-image: url(images/mobile/mobile-header.jpg);
   }
 }
 .header-menu {
@@ -228,22 +227,22 @@ label span::after {
 
 @media screen and (min-width: 768px) {
   .header {
-    background-image: url(../images/tablet/tablet-header.jpg);
+    background-image: url(images/tablet/tablet-header.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .header {
-    background-image: url(../images/tablet/tablet-header@2x.jpg);
+    background-image: url(images/tablet/tablet-header@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .header {
-    background-image: url(../images/desktop/desk-header.jpg);
+    background-image: url(images/desktop/desk-header.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .header {
-    background-image: url(../images/desktop/desk-header@2x.jpg);
+    background-image: url(images/desktop/desk-header@2x.jpg);
   }
 }
 

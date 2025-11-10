@@ -4,7 +4,7 @@
 	max-width: 1600px;
 	width: 100vw;
 	margin: 0 auto 63px;
-	background-image: url(../images/mobile/mobile-header.jpg);
+	background-image: url(images/mobile/mobile-header.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -12,7 +12,7 @@
 	@media (min-device-pixel-ratio: 2),
 		(min-resolution: 192dpi),
 		(min-resolution: 2dppx) {
-		background-image: url(../images/mobile/mobile-header@2x.jpg);
+		background-image: url(images/mobile/mobile-header.jpg);
 	}
 
 	&-menu {
