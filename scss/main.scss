@@ -1,8 +1,11 @@
-@use './base/reset';
-@use './base/global';
-@use './utils/variables';
-
-@use './base/container';
-@use './components/header';
-@use './components/hero';
-@use './components/partners';
+@use './utils/variables' as *;
+@use './utils/placeholders' as *;
+@use './base/reset' as *;
+@use './base/global' as *;
+@use './components/header' as *;
+@use './components/menu' as *;
+@use './components/logo' as *;
+@use './components/hero' as *;
+@use './components/buttons' as *;
+@use './components/partners' as *;
+@use './components/partner' as *;

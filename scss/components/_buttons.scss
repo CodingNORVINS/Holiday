@@ -1,0 +1,28 @@
+@use '../utils/variables' as *;
+@use '../utils/placeholders' as *;
+.button {
+	background-color: $button-color;
+	padding: 12px 37px;
+	border-radius: 26px;
+	margin: auto;
+	display: block;
+	cursor: pointer;
+	width: 280px;
+	border: 2px solid $button-color;
+
+	@media (min-width: 768px) {
+		padding: 12px 17px;
+		width: auto;
+	}
+
+	&--partner {
+		background-color: $main-color;
+		color: $button-color;
+		border: 2px solid $button-color;
+		padding-inline: 59px;
+		@media (min-width: 768px) {
+			padding-inline: 17px;
+		}
+
+	}
+}
