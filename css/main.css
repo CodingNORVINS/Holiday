@@ -182,8 +182,7 @@ body {
 }
 
 .hero {
-  min-height: 552px;
-  max-height: 702px;
+  height: 100vh;
 }
 
 .header {
